@@ -25,3 +25,73 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+# Placement Management API
+
+This project uses **pgAdmin** with **PostgreSQL** as the backend database and provides CRUD API endpoints using **Node.js** and **Express.js**.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+or refer this..
+
+## 🗃️ Database Details
+
+- **Database Name**: `placement`
+- **Table Name**: `placement`
+
+### Table Columns:
+
+| Column Name     | Data Type | Constraints                     |
+|------------------|------------|---------------------------------|
+| `id`             | Integer    | Primary Key, Identity (Always) |
+| `company_name`   | Text       |                                 |
+| `job_title`      | Text       |                                 |
+| `placement_date` | Date       |                                 |
+| `student_id`     | BigInt     |                                 |
+
+---
+
+## 🚀 API Endpoints (Port: 8081)
+
+- **GET** `/api/placement` → Get all placements  
+- **POST** `/api/placement` → Insert new placement  
+- **PUT** `/api/placement/:id` → Update placement by ID  
+- **DELETE** `/api/placement/:id` → Delete placement by ID
+
+---
+
+## 🛠 Setup Instructions
+
+1. Install [PostgreSQL](https://www.postgresql.org/download/) and open **pgAdmin**
+2. Create a database named `placement`
+3. Create a table `placement` with the columns listed above
+4. Clone this repo and install dependencies:
+   ```bash
+   npm install
+Create db.js and configure PostgreSQL credentials
+
+Run the server:
+
+bash
+Copy
+Edit
+node index.js
+📬 Postman Usage
+Use Postman to test the API at http://localhost:8081/api/placement.
+
+Ensure:
+
+Headers include Content-Type: application/json
+
+POST/PUT methods have valid JSON bodies
+
+✅ Example POST Body
+json
+Copy
+Edit
+{
+  "company_name": "Infosys",
+  "job_title": "Developer",
+  "placement_date": "2025-02-15",
+  "student_id": 202501001
+}
