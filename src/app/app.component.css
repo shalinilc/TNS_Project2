@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 15px;
+  }
+
+  h4.display-6 {
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  form {
+    max-width: 600px;
+    font-weight: bold;
+    margin: auto;
+    background: linear-gradient(to right, #ef7575, #f03b2a);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  .form-control:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 0 0.25rem rgba(106, 17, 203, 0.25);
+  }
+
+  .btn-primary, .btn-success, .btn-warning, .btn-danger {
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+  }
+
+  .btn-primary {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+  }
+
+  .btn-success {
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    border: none;
+  }
+
+  .btn-warning {
+    background: linear-gradient(to right, #f7971e, #ffd200);
+    border: none;
+    color: #000;
+  }
+
+  .btn-danger {
+    background: linear-gradient(to right, #f85032, #e73827);
+    border: none;
+  }
+
+  .table {
+    margin-top: 40px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+
+  .table th {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: white;
+  }
+
+  .table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .modal-content {
+    border-radius: 15px;
+  }
+
+  .modal-header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .modal-title {
+    font-weight: 600;
+  }
